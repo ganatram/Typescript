@@ -1,5 +1,5 @@
 // any type
-let x;
+let x = "hello world";
 
 // Interface
 interface Materials {
