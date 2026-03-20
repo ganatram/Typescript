@@ -36,3 +36,60 @@ let p2: poetAssignment = {
   born: 1979,
   name: "Yennifer Jaimes",
 }; */
+
+// Advantage of a Type Alias
+/* type someTypeShape = number | string | boolean; // can work with primitive types & union types 
+
+let t1: someTypeShape;
+
+t1 = 400;
+
+t1 = "some string value";
+
+t1 = false; */
+
+// Advantage of an Interface
+
+/* interface Animal {
+  species: string;
+}
+
+interface Dog extends Animal {
+  breed: string;
+}
+
+let T1: Dog = {
+  breed: "Alcesan",
+  species: "some species",
+}; */
+
+// Type Alias can also indirectly use extend
+
+/* type Animal = {
+  species: string;
+};
+
+type Dog = {
+  breed: string;
+};
+
+let T1: Dog & Animal = {
+  breed: "Alcesan",
+  species: "some species",
+};
+ */
+
+// Declarative Merging - exclusive to Interface
+/* interface Person {
+  name: string;
+}
+
+interface Person {
+  age: number;
+}
+
+let p1: Person = {
+  name: "Mary Oliver",
+  age: 25,
+};
+ */
