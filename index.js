@@ -1,2 +1,2 @@
 var firstName = "Georgia";
-var nameLength = firstName.length;
+var nameLength = firstName.length();

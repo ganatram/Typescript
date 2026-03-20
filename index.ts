@@ -1,3 +1,3 @@
 let firstName = "Georgia";
 
-let nameLength = firstName.length;
+let nameLength = firstName.length();

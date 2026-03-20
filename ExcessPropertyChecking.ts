@@ -18,8 +18,3 @@ let t2: WithLastName = {
   firstName: "Lucile",
   lastName: "Clifton",
 };
-
-// excess properties are allowed in structural typing (typescript)
-
-// javascript is Duck typing - types are not checked in development
-// typescript is structural typing - checks for errors in development as welll
