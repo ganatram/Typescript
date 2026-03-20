@@ -1,4 +1,4 @@
-type Poem = {
+/* type Poem = {
   author: {
     firstName: string;
     lastName: string;
@@ -19,3 +19,24 @@ const poemMisMatch: Poem = {
     name: "Sylvia Plath",
   },
 };
+ */
+
+type Poem = {
+  name: string;
+};
+
+type Author = {
+  firstName: string;
+  lastName: string;
+};
+
+const poemMatch:Author = {
+    name:"Sylvia Plath'
+}
+// 
+ const poemMisMatch:Poem ={
+    firstName='Mary',
+    lastName='Oliver'
+ }
+
+
