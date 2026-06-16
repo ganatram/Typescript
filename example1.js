@@ -1,3 +1,4 @@
+"use strict";
 //annotation V/s inference
 /* const firstName = "Georgia"; // type inference
 
@@ -8,22 +9,14 @@ let x = 200; // type inference // type inferred based on value assigned.
 
 let y: number = 500; // un-necessary type annotation -- explicitly assigning type was not required.
  */
-
+Object.defineProperty(exports, "__esModule", { value: true });
 // type check into action:
 /* function xyz(firstName: string) {}
 xyz("Beyonce", "Knowles"); // no of aruguments do not match the number of parameters */
-
 // type inference based on small calculations :
-// let bestSong: number = Math.random() > 0.5 ? "Chain of friends" : "Respect";
-
+let bestSong = Math.random() > 0.5 ? "Chain of friends" : "Respect";
 // npm i -g typescript
-
 // tsc --version
-
 // tsc --init
-
 // tsc example1.ts
-
-/* function paintPainting(paint: string, painting: boolean) {}
-
-paintPainting("done", true); */
+//# sourceMappingURL=example1.js.map
