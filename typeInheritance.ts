@@ -10,7 +10,7 @@
 }; */
 
 // Interface - custom type shape:
-interface Poet {
+/* interface Poet {
   name: string;
   born: number;
 }
@@ -30,7 +30,7 @@ const YetAnotherPoet: Poet = {
   name: "Freeman",
   born: 2010,
   job: "director",
-};
+}; */
 
 // Reusing type shapes with 'typeof' operator
 /* const PoetLater: typeof Poet = {
@@ -56,3 +56,18 @@ const YetAnotherPoet: Poet = {
   born: 2010,
 };
  */
+
+// type alias can utilize 'primitive types' & 'union types'
+type x = string | number;
+let firstName: x;
+
+firstName = "Henry";
+firstName = 500;
+firstName = true;
+
+
+interface y string | number; //interface should always be declared as an object - it cannot use primitive types
+
+// interface ++ =  declarative merging 
+// type alias ++ = primitive types & union types 
+
